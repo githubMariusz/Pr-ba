@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+   <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.q.aplikacja_kalkulator.About_Activity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Należy podać  dwie liczby i wybrać działanie"
+        android:textSize="19dp"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="19dp"
+        android:layout_marginEnd="19dp" />
+
+    <EditText
+        android:id="@+id/Liczba"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="34dp"
+        android:ems="8"
+        android:inputType="numberDecimal" />
+
+
+
+    <Button
+        android:id="@+id/btnDodaj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:onClick="BDodaj"
+        android:layout_below="@+id/Liczba"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="85dp" />
+
+    <Button
+        android:id="@+id/btnOdejmij"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:onClick="BOdejmij"
+        android:layout_above="@+id/wynik"
+        android:layout_toLeftOf="@+id/btnMnożenie"
+        android:layout_toStartOf="@+id/btnMnożenie" />
+
+    <Button
+        android:id="@+id/btnMnożenie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="*"
+        android:layout_alignBaseline="@+id/btnOdejmij"
+        android:layout_alignBottom="@+id/btnOdejmij"
+        android:layout_toLeftOf="@+id/btnDzielenie"
+        android:layout_toStartOf="@+id/btnDzielenie"
+        android:onClick="BMnożenie"/>
+
+    <Button
+        android:id="@+id/btnDzielenie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="/"
+        android:onClick="BDzielenie"
+        android:layout_above="@+id/wynik"
+        android:layout_alignRight="@+id/textView"
+        android:layout_alignEnd="@+id/textView" />
+
+    <TextView
+        android:id="@+id/wynik"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="35dp"
+        android:text=""
+        android:layout_below="@+id/btnDodaj"
+        android:layout_alignRight="@+id/btnDzielenie"
+        android:layout_alignEnd="@+id/btnDzielenie" />
+
+ <Button
+     android:id="@+id/btnRownaSie"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_below="@+id/btnDodaj"
+     android:text="="
+     android:onClick="BRownaSie"/>
+
+ <Button
+     android:id="@+id/bunC"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="C"
+     android:onClick="BC"
+     android:layout_below="@+id/btnMnożenie"
+     android:layout_alignRight="@+id/wynik"
+     android:layout_alignEnd="@+id/wynik" />
+
+
+</RelativeLayout>

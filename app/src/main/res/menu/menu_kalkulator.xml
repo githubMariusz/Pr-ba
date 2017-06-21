@@ -1,0 +1,31 @@
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+
+<item
+    android:id="@+id/item1"
+    android:orderInCategory="1"
+    android:title="Prosty">
+
+</item>
+<item
+    android:id="@+id/item2"
+    android:icon="@drawable/android_icon"
+    android:orderInCategory="2"
+    android:title="Zawansowany">
+</item>
+    <item
+        android:id="@+id/item3"
+        android:icon="@drawable/android_icon"
+        android:orderInCategory="3"
+        android:title="Wyjdź">
+
+
+    </item>
+
+
+
+
+</menu>
